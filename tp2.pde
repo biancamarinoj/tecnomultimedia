@@ -1,6 +1,7 @@
 
 //Link video a yt
 //https://youtu.be/zLTk623ueL0
+//Bianca Marino
 int cant;
 int diametro;
 PImage ilusion;
