@@ -1,0 +1,12 @@
+"MINIJUEGOS"
+CREDITOS
+INSTRUCCIONES
+¡PERDISTE!
+pulsa los ojos de la rana para reiniciar e ir directamente al juego
+¡GANASTE!
+El objetivo principal de BiankescoFrogg es llevar a la rana de un lado de la pantalla al otro, cruzando una serie de obstáculos peligrosos, incluyendo carros y motos en movimiento, hasta llegar a la parte superior de la pantalla, donde la rana estara a salvo y ganaras el juego completando el nivel.
+Controles: Utiliza las Flechas direccionales: arriba, abajo, izquierda y derecha para mover la rana en esas direcciones.
+Reglas y consejos: Debes evitar ser atropellado por los carros y motos que se desplazan horizontalmente en la carretera, El juego tiene un límite de tiempo de 20 SEGUNDOS, debes cruzar la carretera antes de que este se agote.
+MENÚ
+By Bianca Marino
+presiona ESC para volver al menú
