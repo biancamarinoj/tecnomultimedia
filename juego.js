@@ -27,7 +27,7 @@ class Juego {
     this.aventura = aventura;
   }
 
-  dibujar(imgArray, textos) {
+  dibujar(imgArray, textos) { // METODOS!!
 
     image(imgArray[25], 0, 0);
     image(imgArray[24], 0, 0);
