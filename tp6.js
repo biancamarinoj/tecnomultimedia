@@ -7,7 +7,7 @@ let texto = []; //array de TEXTOS
 
 function setup() {
   createCanvas(600, 600);
-  a = new Aventura(mb, texto);
+  a = new Aventura(mb, texto); //INICIALIZO EL OBJETO
   j = new Juego();
 }
 
