@@ -1,18 +1,18 @@
 class Aventura {
   constructor(estado) {
-    this.botoncito1 = new Boton(500, 300, 20);
+    this.botoncito1 = new Boton(500, 300, 20);//OBJETOS INSTANCIAS DE CLASES 
     this.botoncito2 = new Boton(20, 305, 40);
     this.botoncito3 = new Boton(510, 305, 40);
     this.estado = 0;
-    this.juegop = new Juego(this);
+    this.juegop = new Juego(this); //creo un objeto de la clase juego, hacemos la conexion 
   }
 
-  dibujar(imgArray, textos, m, b, estado) { //imgArray = imagenes / textos = array de textos / m,b = posición de imágenes (x,y)
+  dibujar(imgArray, textos, m, b, estado) { //imgArray = imagenes / textos = array de textos / m,b = posición de imágenes (x,y) de los botones 
 
     //PANTALLA INICIO
     if (this.estado == 0) {
       image(imgArray[0], 0, 0);
-      this.botoncito1.dibujar(imgArray[16], 500, 300); //dibujo la imagen llamando el metodo y le agrego el indice del array
+      this.botoncito1.dibujar(imgArray[16],m,b); //dibujo la imagen llamando el metodo y le agrego el indice del array
       fill(255);
       textSize(40);
       fill(68, 132, 240);
@@ -33,35 +33,35 @@ class Aventura {
       //PANTALLA 1
     } else if (this.estado == 1 ) {
       image(imgArray[1], 0, 0);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m, b);
       this.visual(20, 0, 490, 600, 100);
       text(textos[0], 10, 500, 600);
 
       //PANTALLA 2
     } else if (this.estado == 2 ) {
       image(imgArray[2], 0, 0);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16],m,b);
       this.visual(20, 0, 490, 600, 100);
       text(textos[1], 10, 500, 600);
 
       //PANTALLA 3
     } else if (this.estado == 3 ) {
       image(imgArray[3], 0, 0);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m,b);
       this.visual(20, 0, 490, 600, 80);
       text(textos[2], 5, 500, 600);
 
       //PANTALLA 4
     } else if (this.estado == 4 ) {
       image(imgArray[4], 0, 0);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m,b);
       this.visual(20, 0, 495, 600, 100);
       text(textos[3], 10, 500, 600);
 
       //PANTALLA 5
     } else if (this.estado == 5 ) {
       image(imgArray[5], 0, 0);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16],m,b);
       this.visual(20, 0, 490, 600, 100);
       text(textos[4], 10, 500, 600);
 
@@ -78,28 +78,28 @@ class Aventura {
       image(imgArray[7], 0, 0);
       this.visual(20, 0, 490, 600, 100);
       text(textos[6], 10, 500, 600);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m,b);
 
       //PANTALLA 8
     } else if (this.estado == 8 ) {
       image(imgArray[11], 0, 0);
       this.visual(20, 0, 490, 598, 60);
       text(textos[10], 5, 500, 600);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m,b);
 
       //PANTALLA 9
     } else if (this.estado ==9 ) {
       image(imgArray[8], 0, 0);
       this.visual(20, 0, 490, 598, 80);
       text(textos[7], 5, 500, 600);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m,b);
 
       //PANTALLA 10
     } else if (this.estado ==10 ) {
       image(imgArray[9], 0, 0);
       this.visual(20, 0, 500, 610, 90);
       text(textos[8], 5, 510, 600);
-      this.botoncito1.dibujar(imgArray[16], 500, 300);
+      this.botoncito1.dibujar(imgArray[16], m,b);
 
       //PANTALLA 11 FINAL (cenicienta depresión)
     } else if (this.estado ==11 ) {
